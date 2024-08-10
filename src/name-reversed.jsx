@@ -1,4 +1,4 @@
-import { reverse } from './helpers'
+import { reverse } from './helpers.js'
 
 
 //function nameReverse({ name }) {
@@ -13,12 +13,12 @@ import { reverse } from './helpers'
 // or other method
 
 
-function nameReverse({ props }) {
-    return(
-    <p className="name-reversed">
-        Also, {props.name} backwards is {reverse(props.name)}
-    </p>
-    )
-}
-
-export default nameReverse
+function NameReverse({ name }) {
+    return (
+      <p className="name-reversed">
+        Also, {name} backwards is {reverse(name)}
+      </p>
+    );
+  }
+  
+  export default NameReverse;

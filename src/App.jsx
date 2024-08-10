@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-import {Title} from './title'
-import {nameReverse} from './name-reversed'
-import {nameLength} from './nameLength'
+import  Title  from './title'
+import  NameReverse  from './name-reversed'
+import  NameLength from './nameLength.jsx'
 
 
 function App() {
@@ -10,11 +10,11 @@ function App() {
 
   return (
     <div className="app">
-      <Title  name={name} />
+      <Title name={name} />
 
-      <nameLength  name = {name}/>
+      <NameLength name={name} />
 
-      <nameReverse   name = {name} />
+      <NameReverse name={name} />
     </div>
   )
 }
